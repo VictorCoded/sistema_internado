@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Visitantes e Acompanhantes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Visitantes e Acompanhantes</h1>
+  <img src="foto_vo_raquel.png" alt="Foto da Vó Raquel">
+  <input type="date" id="data-selecionada" />
+
+  <section>
+    <h2>Visitantes</h2>
+    <ul id="visitantes-list"></ul>
+    <input id="novo-visitante" placeholder="Nome do visitante" />
+    <select id="turno-visitante">
+      <option value="manhã">Manhã</option>
+      <option value="noite">Noite</option>
+    </select>
+    <button onclick="addVisitante()">Adicionar Visitante</button>
+  </section>
+
+  <section>
+    <h2>Acompanhantes</h2>
+    <ul id="acompanhantes-list"></ul>
+    <input id="novo-acompanhante" placeholder="Nome do acompanhante" />
+    <select id="turno">
+      <option value="manhã">Manhã</option>
+      <option value="noite">Noite</option>
+    </select>
+    <button onclick="addAcompanhante()">Adicionar Acompanhante</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

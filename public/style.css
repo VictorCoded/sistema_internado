@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f6fc;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+img {
+  border-radius: 10px;
+  max-width: 250px;
+  margin: 15px auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+section {
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+input, select {
+  padding: 8px;
+  margin: 5px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 10px 0;
+}
+
+body {
+  background-image: url('fundo_familia.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: brightness(0.9);
+}
+
+section {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 600px) {
+  section {
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+  }
+  input, select, button {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  body {
+    padding: 10px;
+  }
+}
+
+#visitantes-section {
+  border-left: 5px solid #007bff;
+}
+
+#acompanhantes-section {
+  border-left: 5px solid #28a745;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 160px;
+  height: auto;
+  background-image: url('foto_vo_raquel.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+section, h1, input, button, select {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  section {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+  }
+
+  input, select, button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  img {
+    max-width: 80%;
+    margin: 10px auto;
+  }
+}
